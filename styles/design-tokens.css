@@ -1,0 +1,146 @@
+:root {
+  /* Colors */
+  --color-white-field: #ffffffff;
+  --color-error: #e22138ff;
+  --color-green: #339d5dff;
+  --color-blue: #0a66c2ff;
+  --color-link-hover: #338de7ff;
+
+
+  
+  /* Yellow shades */
+  --color-yellow-50: #fffee7ff;
+  --color-yellow-100: #ffffc1ff;
+  --color-yellow-200: #fffc87ff;
+  --color-yellow-300: #fff342ff;
+  --color-yellow-400: #ffe40fff;
+  --color-yellow-500: #fdd503ff;
+  --color-yellow-600: #cf9d00ff;
+  --color-yellow-700: #a57103ff;
+  --color-yellow-800: #88570bff;
+  --color-yellow-900: #74470fff;
+  --color-yellow-950: #442504ff;
+  
+  /* Zinc shades */
+  --color-zinc-50: #fafafaff;
+  --color-zinc-100: #f4f4f5ff;
+  --color-zinc-200: #e4e4e7ff;
+  --color-zinc-300: #d4d4d8ff;
+  --color-zinc-400: #a1a1aaff;
+  --color-zinc-500: #71717aff;
+  --color-zinc-600: #52525bff;
+  --color-zinc-700: #3f3f46ff;
+  --color-zinc-800: #27272aff;
+  --color-zinc-900: #18181bff;
+  --color-zinc-950: #09090bff;
+  
+  /* Typography */
+  --font-family: 'Open Sans', sans-serif;
+
+  /* H1 */
+  --font-size-h1: 48px;
+  --line-height-h1: 62.4px;
+  --font-weight-h1: 700;
+  --letter-spacing-h1: 0px;
+
+  /* H2 */
+  --font-size-h2: 36px;
+  --line-height-h2: 46.8px;
+  --font-weight-h2: 700;
+  --letter-spacing-h2: 0px;
+
+  /* H3 */
+  --font-size-h3: 28px;
+  --line-height-h3: 36.4px;
+  --font-weight-h3: 700;
+  --letter-spacing-h3: 0px;
+
+  /* H4 */
+  --font-size-h4: 20px;
+  --line-height-h4: 26px;
+  --font-weight-h4: 600;
+  --letter-spacing-h4: 0px;
+
+  /* H1 Tab Mobile */
+  --font-size-h1-tab-mobile: 32px;
+  --line-height-h1-tab-mobile: 38.4px;
+  --font-weight-h1-tab-mobile: 700;
+  --letter-spacing-h1-tab-mobile: 0px;
+
+  /* H2 Mobile */
+  --font-size-h2-mobile: 24px;
+  --line-height-h2-mobile: 31.2px;
+  --font-weight-h2-mobile: 700;
+  --letter-spacing-h2-mobile: 0px;
+
+  /* Large Regular */
+  --font-size-large-r: 18px;
+  --line-height-large-r: 25.2px;
+  --font-weight-large-r: 400;
+  --letter-spacing-large-r: -1.08px;
+
+  /* Large Semibold */
+  --font-size-large-sb: 18px;
+  --line-height-large-sb: 25.2px;
+  --font-weight-large-sb: 600;
+  --letter-spacing-large-sb: -1.08px;
+
+  /* Large Bold */
+  --font-size-large-b: 18px;
+  --line-height-large-b: 25.2px;
+  --font-weight-large-b: 700;
+  --letter-spacing-large-b: -1.08px;
+
+  /* Lead Regular */
+  --font-size-lead-r: 20px;
+  --line-height-lead-r: 26px;
+  --font-weight-lead-r: 400;
+  --letter-spacing-lead-r: 0px;
+
+  /* Paragraph Semibold */
+  --font-size-p-sb: 16px;
+  --line-height-p-sb: 24px;
+  --font-weight-p-sb: 600;
+  --letter-spacing-p-sb: -0.96px;
+
+  /* Body Regular */
+  --font-size-body-r: 16px;
+  --line-height-body-r: 22.4px;
+  --font-weight-body-r: 400;
+  --letter-spacing-body-r: 0px;
+
+  /* Small Semibold */
+  --font-size-small-sb: 14px;
+  --line-height-small-sb: 19.6px;
+  --font-weight-small-sb: 600;
+  --letter-spacing-small-sb: 0px;
+
+  /* Small Regular */
+  --font-size-small-r: 14px;
+  --line-height-small-r: 19.6px;
+  --font-weight-small-r: 400;
+  --letter-spacing-small-r: 0px;
+
+  /* Support Regular */
+  --font-size-support-r: 12px;
+  --line-height-support-r: 14.4px;
+  --font-weight-support-r: 400;
+  --letter-spacing-support-r: 0px;
+
+  /* Grid */
+  --grid-tablet-gutter: 24px;
+  --grid-tablet-column-count: 6;
+  --grid-tablet-margin: 48px;
+  --grid-mobile-gutter: 16px;
+  --grid-mobile-column-count: 4;
+  --grid-mobile-margin: 20px;
+
+  /* Effects */
+  --shadow-1: 2px 2px 12px 0 rgba(0, 0, 0, 0.25);
+
+  /* Corners */
+  --corner-small: 8px;
+  --corner-medium: 12px;
+  --corner-large: 16px;
+  --corner-extra-large: 40px;
+}

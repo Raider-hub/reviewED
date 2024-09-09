@@ -1,0 +1,33 @@
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-zinc-50);
+  
+}
+
+
+h1 {
+  --font-size-h1: 48px;
+  --line-height-h1: 62.4px;
+  --font-weight-h1: 700;
+  --letter-spacing-h1: 0px;
+}
+h2 {
+  --font-size-h2: 36px;
+  --line-height-h2: 46.8px;
+  --font-weight-h2: 700;
+  --letter-spacing-h2: 0px;
+}
+
+h3 {
+  --font-size-h3: 28px;
+  --line-height-h3: 36.4px;
+  --font-weight-h3: 700;
+  --letter-spacing-h3: 0px;
+}
+
+h4 {
+  --font-size-h4: 20px;
+  --line-height-h4: 26px;
+  --font-weight-h4: 600;
+  --letter-spacing-h4: 0px;
+}
