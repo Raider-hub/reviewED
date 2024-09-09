@@ -19,7 +19,15 @@ body {
   width: 100%;
 
   justify-content: center; /* Aligns items vertically (up/down) */
-  height: 100vh;
+
   margin-top: 40px; /*  desktop */
-  row-gap: 80px; /*  desktop */
+  gap: 80px; /*  desktop */
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide the clear (X) button in Chrome, Safari, and Edge */
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
 }

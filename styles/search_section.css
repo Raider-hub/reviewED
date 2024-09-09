@@ -1,0 +1,106 @@
+.search-section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 58px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 12px 0 rgba(165, 113, 3, 0.25);
+  background-color: var(--color-white-field);
+  border-radius: var(--corner-extra-large);
+}
+
+.content-search-container {
+  position: relative;
+  flex: 1.5;
+  min-width: 298px;
+}
+.content-search-icon {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Allows clicking through the icon */
+}
+
+.content-search-input:focus,
+.content-search-input:active {
+  background-color: transparent;
+
+  outline: none;
+}
+
+.content-search-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 58px;
+  border: 1px solid var(--color-zinc-400);
+
+  border-right: none;
+  border-top-left-radius: var(--corner-extra-large);
+  border-bottom-left-radius: var(--corner-extra-large);
+  padding-left: 35px; /* Make room for the icon */
+}
+
+.companies-drop-down-container {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  border: 1px solid var(--color-zinc-400);
+  border-right: none;
+}
+.location-drop-down-container {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  border: 1px solid var(--color-zinc-400);
+  border-right: none;
+}
+.courses-drop-down-container {
+  display: flex;
+  align-items: center;
+  padding: 0 4px 0 16px;
+  flex-direction: row;
+  flex: 2;
+  justify-content: space-between;
+  border: 1px solid var(--color-zinc-400);
+  border-radius: 0 var(--corner-extra-large) var(--corner-extra-large) 0;
+}
+.search-btn-container {
+  justify-content: center;
+}
+
+.course-btn {
+  height: 50px;
+  width: 196px;
+  border-radius: var(--corner-extra-large);
+  background-color: var(--color-yellow-500);
+  border: none;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  margin-left: 28px;
+}
+
+.companies-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-title {
+  display: flex;
+}
+.top-companies-btn {
+  height: 40px;
+  width: 172px;
+  border-radius: var(--corner-extra-large);
+  background-color: transparent;
+
+  border: 1px solid var(--color-yellow-500);
+}
