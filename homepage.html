@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage reviewED</title>
-
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/responsive_layout.css" />
     <link rel="stylesheet" href="styles/design-tokens.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    
+    <link rel="stylesheet" href="styles/hero_section.css" />
+    <link rel="stylesheet" href="styles/typography.css" />
     <style></style>
   </head>
   <body>
@@ -18,16 +21,17 @@
             <div class="logo-container">
               <img class="logo" src="assets/logo/logo.png" alt="" />
             </div>
-
-            <div class="search-container">
-              <img
-                class="search-icon"
-                src="assets/icons/search-normal.svg"
-                alt=""
-                srcset=""
-              />
-              <input class="search-input" type="search" placeholder="Пошук" />
-            </div>
+            <form>
+              <div class="search-container">
+                <img
+                  class="search-icon"
+                  src="assets/icons/search-normal.svg"
+                  alt=""
+                  srcset=""
+                />
+                <input class="search-input" type="search" placeholder="Пошук" />
+              </div>
+            </form>
           </div>
 
           <div class="header-right-side">
@@ -37,9 +41,34 @@
             </button>
           </div>
         </div>
-
-       
       </header>
+      <main class="main-contents-container">
+        <div class="hero-banner-container">
+          <div class="hero-text-container">
+            <h1 class="hero-text">
+              Тільки перевірені<br />
+              відгуки про
+              <span class="inline-header-text">
+                компанії<br />
+                або курси</span
+              >
+            </h1>
+            <p class="regular-body">
+              Ви також можете надіслати свій власний відгук про компанію чи
+              курс. Коли
+              ми впевнимось в дійсності Вашої особи, ми його опублікуємо.
+            </p>
+          </div>
+          <div class="hero-image">
+            <img
+              class="hero-img"
+              src="assets/images/medium-shot-woman-working-with-laptop 1title-image.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

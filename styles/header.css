@@ -97,12 +97,3 @@
   width: 24px;
   height: 24px;
 }
-
-.full-width-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border: none;
-  border-top: 2px solid black; /* Adjust line thickness and color */
-}

@@ -1,33 +1,25 @@
 body {
   font-family: var(--font-family);
   background-color: var(--color-zinc-50);
-  
+  padding: 0 72px;
+  margin: 8px;
 }
 
-
-h1 {
-  --font-size-h1: 48px;
-  --line-height-h1: 62.4px;
-  --font-weight-h1: 700;
-  --letter-spacing-h1: 0px;
-}
-h2 {
-  --font-size-h2: 36px;
-  --line-height-h2: 46.8px;
-  --font-weight-h2: 700;
-  --letter-spacing-h2: 0px;
+.homepage-container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
-h3 {
-  --font-size-h3: 28px;
-  --line-height-h3: 36.4px;
-  --font-weight-h3: 700;
-  --letter-spacing-h3: 0px;
-}
+.main-contents-container {
+  background-color: var(--color-zinc-50);
+  position: relative;
+  width: 100%;
 
-h4 {
-  --font-size-h4: 20px;
-  --line-height-h4: 26px;
-  --font-weight-h4: 600;
-  --letter-spacing-h4: 0px;
+  justify-content: center; /* Aligns items vertically (up/down) */
+  height: 100vh;
+  margin-top: 40px; /*  desktop */
+  row-gap: 80px; /*  desktop */
 }
