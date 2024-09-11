@@ -1,0 +1,21 @@
+.companies-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-title {
+  display: flex;
+}
+.top-companies-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 172px;
+  border-radius: var(--corner-extra-large);
+  background-color: transparent;
+  border: 1px solid var(--color-yellow-500);
+  padding: 0 24px;
+}

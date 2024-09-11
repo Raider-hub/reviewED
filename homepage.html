@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/hero_section.css" />
     <link rel="stylesheet" href="styles/typography.css" />
     <link rel="stylesheet" href="styles/search_section.css" />
+    <link rel="stylesheet" href="styles/top_company_section.css" />
     <style></style>
   </head>
   <body>
@@ -88,7 +89,7 @@
             </form>
           </div>
           <div class="companies-drop-down-container">
-            <div><p class="company-item .style-lead-R">Компанії</p></div>
+            <div><p class="company-item style-lead-R">Компанії</p></div>
             <div>
               <img
                 class="company-drop-down"
@@ -113,7 +114,7 @@
           </div>
           <div class="courses-drop-down-container">
             <div>
-              <p class="courses-company-item .style-lead-R">Всі локації</p>
+              <p class="courses-company-item style-lead-R">Всі локації</p>
             </div>
             <div class="search-btn-container">
               <img
@@ -129,7 +130,70 @@
         <div class="companies-container">
           <div><p class="company-title style-h2">ТОП Компанії</p></div>
 
-          <div><button class="top-companies-btn style-p-SB">Дивитись всі</button></div>
+          <div>
+            <button class="top-companies-btn style-p-SB">
+              Дивитись всі
+              <img
+                src="assets/icons/arrow-right.svg"
+                alt="Dropdown Icon"
+                class="dropdown-icon"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-container">
+          <div class="v-hero-image">
+            <!-- Image tag -->
+            <img
+              class="hero-img"
+              src="assets/images/medium-shot-woman-working-with-laptop 1title-image.png"
+              alt="Background Image"
+            />
+          </div>
+
+          <div class="v-search-section-container">
+            <div class="v-search-input-container">
+              <img
+                class="v-content-search-icon"
+                src="assets/icons/search-normal.svg"
+              />
+              <input
+                type="text"
+                placeholder="Ввести запит"
+                class="v-search-input style-lead-R"
+              />
+            </div>
+            <div class="row-select-field">
+              <div class="v-companies-drop-down-container">
+                <select class="companies-select-box change-select-icon style-lead-R">
+                  <option>Компанії</option>
+                  <option>Компанія 1</option>
+                  <option>Компанія 2</option>
+                </select>
+                <div class="select-icon-container">
+                  <img
+                    class="select-icon"
+                    src="assets/icons/arrow-down.svg"
+                    alt=""/>
+                </div>
+              </div>
+              <div class="v-location-drop-down-container">
+                <select  class="location-select-box change-select-icon style-lead-R">
+                  <option>Всі локації</option>
+                  <option>Всі локації 1</option>
+                  <option>Всі локації 2</option>
+                </select>
+                <div class="select-icon-container">
+                  <img
+                    class="select-icon"
+                    src="assets/icons/arrow-down.svg"
+                    alt=""/>
+                </div>
+              </div>
+            </div>
+            <div class="v-courses-drop-down-container"></div>
+          </div>
         </div>
       </main>
     </div>
