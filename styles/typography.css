@@ -76,3 +76,13 @@ h4 {
   line-height: var(--line-height-lead-r);
   letter-spacing: var(--letter-spacing-lead-r);
 }
+
+.small-R{
+  font-size: var(--font-size-small-r);
+  line-height: var(--line-height-small-r);
+  font-weight: var(--font-weight-small-r);
+  letter-spacing: var(--letter-spacing-small-r);
+ 
+
+
+}

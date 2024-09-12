@@ -11,15 +11,77 @@ footer {
   display: none;
 }
 
+.search-section-container {
+  display: flex;
+}
+.show-desktop{
+  display: flex;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  body {
+    padding: 0 20px;
+  }
+  .show-desktop{
+    display: none;
+  }
+  /* .search-section-container{
+    display: flex;
+  } */
+  .v-search-section-container{
+    bottom: -60px;
+    width: 100%;
+  }
+  .company-title {
+    font-size: var(--font-size-h2-mobile);
+    line-height: var(--line-height-h2-mobile);
+    font-weight: var(--font-weight-h2-mobile);
+    letter-spacing: var(--letter-spacing-h2-mobile);
+    margin: 0;
+    
+  }
+
+ 
+
+
+  /* Add tablet-specific styles here */
+  h1.hero-text {
+    font-size: var(--font-size-h1-tab-mobile);
+    line-height: var(--line-h1-tab-mobile);
+    font-weight: var(--font-weight-h1-tab-mobile);
+    letter-spacing: var(--letter-spacing-h1-tab-mobile);
+    margin: 0;
+  }
+  .hero-text-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.top-companies-btn{
+  display: flex;
+}
+
+
 /* Tablet styles */
-@media (max-width: 1163px) {
+@media (max-width: 1024px) {
   body {
     padding: 0px 48px;
   }
 
+  .tablet{
+    display: none;
+  }
+
+
+
+
   .hero-banner-container {
     row-gap: 56px;
     flex-wrap: wrap;
+  }
+  .hero-banner-container {
+    justify-content: center;
   }
   .hero-text-container {
     justify-content: flex-start;
@@ -52,25 +114,5 @@ footer {
 
   .header-left-side {
     justify-content: flex-start; /* Add this line */
-  }
-}
-
-/* Mobile styles */
-@media (max-width: 480px) {
-  body {
-    padding: 0 20px;
-  }
-
-  /* Add tablet-specific styles here */
-  h1.hero-text {
-    font-size: var(--font-size-h1-tab-mobile);
-    line-height: var(--line-h1-tab-mobile);
-    font-weight: var(--font-weight-h1-tab-mobile);
-    letter-spacing: var(--letter-spacing-h1-tab-mobile);
-    margin: 0;
-  }
-  .hero-text-container {
-    flex-wrap: wrap;
-    width: 100%;
   }
 }
