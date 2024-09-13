@@ -1,0 +1,94 @@
+.add-company-container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-zinc-100);
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-left: clamp(20px, 3vw, 106px);
+  padding-right: clamp(20px, 3vw, 106px);
+  padding-top: clamp(48px, 3vw, 106px);
+  padding-bottom: clamp(48px, 3vw, 106px);
+  border-radius: var(--corner-extra-large);
+}
+
+.add-company-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+  justify-content: center;
+  
+}
+
+.inline-add-company-title {
+  color: var(--color-yellow-500);
+}
+
+.add-company-body {
+  color: var(--color-zinc-950);
+  margin: 0;
+}
+
+.add-company-form-container {
+  display: flex;
+  padding: clamp(24px, 3vw, 48px);
+  flex-direction: column;
+  background-color: var(--color-zinc-300);
+  border-radius: var(--corner-extra-large) var(--corner-small)
+    var(--corner-extra-large) var(--corner-small);
+  gap: clamp(20px, 1vw, 36px);
+  /* gap: 36px; */
+  width: clamp(300px, 1vw, 511px);
+  align-items: center ;
+}
+
+.company-form-title {
+  display: flex;
+  margin: 0;
+  
+}
+.company-input-form {
+  display: flex;
+  width: 100%;
+  
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.company-input-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+
+}
+
+.company-input {
+  color: var(--color-zinc-400);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background-color: var(--color-white-field);
+  border-radius: var(--corner-extra-large);
+  height: 54px;
+}
+
+.add-company-btn{
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: var(--corner-extra-large);
+  background-color: var(--color-yellow-500);
+
+}
+
+
+
+
+.company-input-form :active,
+.company-input-form :focus {
+  outline: none;
+  border: none;
+}

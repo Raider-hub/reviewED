@@ -14,7 +14,7 @@ footer {
 .search-section-container {
   display: flex;
 }
-.show-desktop{
+.show-desktop {
   display: flex;
 }
 
@@ -23,13 +23,13 @@ footer {
   body {
     padding: 0 20px;
   }
-  .show-desktop{
+  .show-desktop {
     display: none;
   }
   /* .search-section-container{
     display: flex;
   } */
-  .v-search-section-container{
+  .v-search-section-container {
     bottom: -60px;
     width: 100%;
   }
@@ -39,11 +39,40 @@ footer {
     font-weight: var(--font-weight-h2-mobile);
     letter-spacing: var(--letter-spacing-h2-mobile);
     margin: 0;
-    
   }
 
- 
+  .add-company-container {
+    flex-direction: column;
+  }
+  .add-company-header {
+    font-size: var(--font-size-h2-mobile);
+    line-height: var(--line-height-h2-mobile);
+    font-weight: var(--font-weight-h2-mobile);
+    letter-spacing: var(--letter-spacing-h2-mobile);
+    margin: 0;
+    text-align: center;
+  }
+  .company-form-title {
+    font-size: var(--font-size-h2-mobile);
+    line-height: var(--line-height-h2-mobile);
+    font-weight: var(--font-weight-h2-mobile);
+    letter-spacing: var(--letter-spacing-h2-mobile);
+    margin: 0;
+  }
 
+  .add-company-body {
+    font-size: var(--font-size-p-sb);
+    line-height: var(--line-height-p-sb);
+    font-weight: var(--font-weight-p-sb);
+    letter-spacing: var(--letter-spacing-p-sb);
+    margin: 0;
+  }
+  .add-title {
+    font-size: var(--font-size-p-sb);
+    line-height: var(--line-height-p-sb);
+    font-weight: var(--font-weight-p-sb);
+    letter-spacing: var(--letter-spacing-p-sb);
+  }
 
   /* Add tablet-specific styles here */
   h1.hero-text {
@@ -58,23 +87,62 @@ footer {
     width: 100%;
   }
 }
-.top-companies-btn{
+.top-companies-btn {
   display: flex;
 }
-
+.new-course-btn {
+  display: flex;
+}
 
 /* Tablet styles */
 @media (max-width: 1024px) {
   body {
     padding: 0px 48px;
   }
-
-  .tablet{
-    display: none;
+  .add-company-container {
+    flex-direction: column;
   }
 
+  .add-company-header {
+    font-size: var(--font-size-h1-tab-mobile);
+    line-height: var(--line-height-h1-tab-mobile);
+    font-weight: var(--font-weight-h1-tab-mobile);
+    letter-spacing: var(--letter-spacing-h1-tab-mobile);
+    margin: 0;
+    text-align: center;
+  }
+  .company-form-title {
+    font-size: var(--font-size-h2-mobile);
+    line-height: var(--line-height-h2-mobile);
+    font-weight: var(--font-weight-h2-mobile);
+    letter-spacing: var(--letter-spacing-h2-mobile);
+    margin: 0;
+  }
 
+  .add-company-body {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h4);
+    font-weight: var(--font-weight-h4);
+    letter-spacing: var(--letter-spacing-h4);
+    margin: 0;
+  }
+  .add-title {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h4);
+    font-weight: var(--font-weight-h4);
+    letter-spacing: var(--letter-spacing-h4);
+    margin: 0;
+  }
 
+  .tablet {
+    display: none;
+  }
+  .new-course-title-d {
+    display: none;
+  }
+  .new-course-title-m {
+    display: flex;
+  }
 
   .hero-banner-container {
     row-gap: 56px;

@@ -17,6 +17,7 @@
 .company-title {
   display: flex;
 }
+
 .top-companies-btn {
   display: flex;
   align-items: center;
@@ -29,9 +30,6 @@
   padding: 0 24px;
 }
 
-.arrow-button {
-  display: none;
-}
 
 .top-companies-list {
   display: flex;
@@ -73,7 +71,7 @@
 
 .company-image img {
   width: 144px;
-  height: auto;
+  height: auto; 
 }
 
 .reviews-title {

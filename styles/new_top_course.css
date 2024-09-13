@@ -1,0 +1,116 @@
+.new-courses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: clamp(24px, 5vw, 40px);
+  background-color: var(--color-yellow-100);
+}
+
+.top-courses-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  /* padding: clamp(24px, 5vw, 40px); */
+ 
+
+}
+
+.new-course-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-course-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 172px;
+  border-radius: var(--corner-extra-large);
+  background-color: transparent;
+  border: 1px solid var(--color-yellow-500);
+  padding: 0 24px;
+}
+
+.new-course-title-d {
+  display: flex;
+}
+.new-course-title-m {
+  display: none;
+}
+
+.new-companies-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(20px, 5%, 24px);
+  width: 100%;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.new-course-items-container {
+  display: flex;
+  background-color: var(--color-white-field);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(16px, 2vw, 24px); /* desktop */
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: var(--corner-medium);
+  width: 100%;
+  max-width: 230px;
+  gap: clamp(8px, 5vw, 16px);
+}
+
+.logo-rating-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.course-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.new-course-rating {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.new-course-rating img {
+  width: 121px;
+  height: auto;
+}
+
+.course-logo img {
+  width: 100%;
+}
+
+.company-image img {
+  width: 144px;
+  height: auto;
+}
+.new-course-name {
+  color: var(--color-zinc-950);
+  margin: 0;
+
+  overflow: hidden; /* Hides the overflowed content */
+  display: -webkit-box; /* Set the display to a webkit-specific box model */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; /* Ensures the box is vertically oriented */
+  text-overflow: ellipsis; /* Adds an ellipsis ('...') at the end */
+}

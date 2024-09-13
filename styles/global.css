@@ -35,3 +35,17 @@ input[type="search"]::-webkit-search-cancel-button {
   display: none;
 } */
 
+.arrow-button {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-yellow-500);
+  border-radius: 50%;
+}
+
+.arrow-button img {
+  width: 24px;
+  height: 24px;
+}
