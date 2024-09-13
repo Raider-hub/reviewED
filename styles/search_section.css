@@ -64,6 +64,7 @@
   border: 1px solid var(--color-zinc-500);
   border-right: none;
   position: relative;
+
 }
 .courses-drop-down-with-btn {
   display: flex;
@@ -89,6 +90,8 @@
   display: flex;
   box-sizing: border-box;
   /* background-color: bisque; */
+  border-bottom: 1px solid var(--color-zinc-500);
+ margin-bottom: clamp(12px, 1.667vw, 24px);
 }
 
 .v-courses-drop-down-container :active,
@@ -186,7 +189,10 @@
 
 .v-hero-image {
   position: relative;
-  max-width: 602px;
+  /* max-width: 602px; */
+  width: clamp(335px,41.806vw,602px);
+  height: auto;
+  /* width: 100%; */
 
   /* flex-shrink: 0; */
 }
@@ -285,6 +291,7 @@
   box-sizing: border-box;
   border: none;
   color: var(--color-zinc-950);
+  /* background-color: aquamarine; */
 }
 
 .change-select-icon {

@@ -1,0 +1,67 @@
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(32px, 2.7vw, 40px);
+  /* width: 100%; */
+}
+
+.faq-header {
+  color: var(--color-zinc-950);
+}
+
+.faqs-items-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 1.389vw;
+  align-items: flex-center;
+}
+
+.faq-items {
+  display: flex;
+  /* gap: 20px; */
+  justify-content: space-between;
+  width: clamp(335px, 42.778vw, 600px);
+  height: clamp(56px, 5vw, 72px);
+  padding: clamp(16px, 1.667vw, 24px);
+  box-sizing: border-box;
+  background-color: var(--color-zinc-200);
+  border-radius: var(--corner-medium);
+  font-size: clamp(16px, 1.111vw, 20px);
+}
+
+.faq-items img {
+  width: 24px;
+  height: auto;
+}
+
+.faq-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 172px;
+  border-radius: var(--corner-extra-large);
+  background-color: transparent;
+  border: 1px solid var(--color-yellow-500);
+  padding: 0 24px;
+}
+
+
+.trunc-faq-items {
+  color: var(--color-zinc-950);
+  margin: 0;
+  height: min-content;
+
+  overflow:hidden; /* Hides the overflowed content */
+  display: -webkit-box; /* Set the display to a webkit-specific box model */
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; /* Ensures the box is vertically oriented */
+  text-overflow: ellipsis; /* Adds an ellipsis ('...') at the end */
+}

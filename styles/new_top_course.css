@@ -4,20 +4,35 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  padding: clamp(24px, 5vw, 40px);
+  padding: clamp(24px, 2.778vw, 40px);
   background-color: var(--color-yellow-100);
+  width: 100%;
+  box-sizing: border-box;
 }
-
-.top-courses-container{
+/* .new-courses-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  /* padding: clamp(24px, 5vw, 40px); */
- 
+  padding: clamp(24px, 2.778vw, 40px);
+  background-color: var(--color-yellow-100);
+  width: 100%;
+  box-sizing: border-box;
+} */
 
+.top-courses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  /* padding: clamp(24px, 2.778vw, 40px); */
+  width: 100%;
 }
+/* .top-companies-btn{
+  display: flex;
+} */
 
 .new-course-header {
   width: 100%;
@@ -51,7 +66,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: clamp(20px, 5%, 24px);
+  gap: clamp(20px, 1.736vw, 24px);
   width: 100%;
   flex-wrap: wrap;
   flex: 1;
@@ -63,11 +78,28 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: clamp(16px, 2vw, 24px); /* desktop */
+  padding: clamp(16px, 1.667vw, 24px);
   box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
   border-radius: var(--corner-medium);
-  width: 100%;
-  max-width: 230px;
+
+  width: clamp(274px,19.097vw,275px);
+  /* width: 275px; */
+ 
+  gap: clamp(8px, 5vw, 16px);
+}
+
+.top-course-items-container {
+  display: flex;
+  background-color: var(--color-white-field);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(16px, 1.667vw, 24px);
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: var(--corner-medium);
+
+  width: clamp(294px,20.486vw,295px);
+ 
   gap: clamp(8px, 5vw, 16px);
 }
 
@@ -92,7 +124,7 @@
 }
 
 .new-course-rating img {
-  width: 121px;
+  max-width: 121px;
   height: auto;
 }
 
@@ -101,7 +133,7 @@
 }
 
 .company-image img {
-  width: 144px;
+  max-width: 144px;
   height: auto;
 }
 .new-course-name {

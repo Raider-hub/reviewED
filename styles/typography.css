@@ -74,12 +74,20 @@ h4 {
   letter-spacing: var(--letter-spacing-p-sb);
   margin: 0;
 }
+.style-small-SB {
+  font-size: var(--font-size-small-sb);
+  line-height: var(--line-height-small-sb);
+  font-weight: var(--font-weight-small-sb);
+  letter-spacing: var(--letter-spacing-small-sb);
+  margin: 0;
+}
 
 .style-lead-R-p::placeholder,
 .style-lead-R-p::-webkit-input-placeholder,  /* Chrome, Safari, Opera */
 .style-lead-R-p::-moz-placeholder,           /* Firefox 19+ */
 .style-lead-R-p:-ms-input-placeholder,       /* Internet Explorer 10-11 */
-.style-lead-R-p::-ms-input-placeholder {     /* Microsoft Edge */
+.style-lead-R-p::-ms-input-placeholder {
+  /* Microsoft Edge */
   font-size: var(--font-size-lead-r);
   font-weight: var(--font-weight-lead-r);
   line-height: var(--line-height-lead-r);
@@ -90,20 +98,34 @@ h4 {
 .style-body-R-p::-webkit-input-placeholder,  /* Chrome, Safari, Opera */
 .style-body-R-p::-moz-placeholder,           /* Firefox 19+ */
 .style-body-R-p:-ms-input-placeholder,       /* Internet Explorer 10-11 */
-.style-body-R-p::-ms-input-placeholder {     /* Microsoft Edge */
+.style-body-R-p::-ms-input-placeholder {
+  /* Microsoft Edge */
   font-size: var(--font-size-body-r);
   font-weight: var(--font-weight-body-r);
   line-height: var(--line-height-body-r);
   letter-spacing: var(--letter-spacing-body-r);
 }
 
-.small-R{
+.small-R {
   font-size: var(--font-size-small-r);
   line-height: var(--line-height-small-r);
   font-weight: var(--font-weight-small-r);
   letter-spacing: var(--letter-spacing-small-r);
-  
- 
+}
 
+.style-responsive{
+  margin: 0;
+  font-size: clamp(var(--font-size-body-r), 1.389vw,var(--font-size-h4));
+  line-height: clamp(var(--line-height-small-r),1.806vw, var(--line-height-h4));
+  font-weight: 600;
+  letter-spacing: clamp(var(--letter-spacing-small-r),0, var(--letter-spacing-h4));
+}
 
+.large-SB {
+  font-family: var(--font-family);
+  font-size: var(--font-size-large-sb);
+  line-height: var(--line-height-large-sb);
+  font-weight: var(--font-weight-large-sb);
+  letter-spacing: var(--letter-spacing-large-sb);
+  margin: 0;
 }

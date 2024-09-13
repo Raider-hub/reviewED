@@ -1,20 +1,32 @@
+html,
 body {
   font-family: var(--font-family);
+  /* background-color: var(--color-yellow-500); */
   background-color: var(--color-zinc-50);
-  padding: 0 72px;
-  margin: 8px;
+  /* overflow-x: hidden; */
+  /* margin: 8px;  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
 }
 
 .homepage-container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+ padding: 18px 94px 0px 94px;
+ 
 }
 
 .main-contents-container {
-  background-color: var(--color-zinc-50);
   position: relative;
   width: 100%;
 
@@ -49,3 +61,4 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 24px;
   height: 24px;
 }
+
