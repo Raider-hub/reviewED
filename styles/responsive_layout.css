@@ -32,7 +32,6 @@ footer {
   display: flex;
 }
 
-
 /* Tablet styles */
 @media (max-width: 1024px) {
   .homepage-container {
@@ -50,7 +49,6 @@ footer {
   .v-search-section-container {
     display: block;
   }
-
 
   .logo-section {
     flex: 1;
@@ -100,94 +98,92 @@ footer {
     letter-spacing: var(--letter-spacing-large-sb);
   }
 
-
-/* .add-company-form-container {
+  /* .add-company-form-container {
     width: 60%;
   } */
 
-.br-desktop-only {
-  display: block;
-}
+  .br-desktop-only {
+    display: block;
+  }
 
-.add-company-header {
-  font-size: var(--font-size-h1-tab-mobile);
-  line-height: var(--line-height-h1-tab-mobile);
-  font-weight: var(--font-weight-h1-tab-mobile);
-  letter-spacing: var(--letter-spacing-h1-tab-mobile);
-  margin: 0;
-  text-align: center;
-}
-.company-form-title {
-  font-size: var(--font-size-h2-mobile);
-  line-height: var(--line-height-h2-mobile);
-  font-weight: var(--font-weight-h2-mobile);
-  letter-spacing: var(--letter-spacing-h2-mobile);
-  margin: 0;
-  text-align: center;
-}
+  .add-company-header {
+    font-size: var(--font-size-h1-tab-mobile);
+    line-height: var(--line-height-h1-tab-mobile);
+    font-weight: var(--font-weight-h1-tab-mobile);
+    letter-spacing: var(--letter-spacing-h1-tab-mobile);
+    margin: 0;
+    text-align: center;
+  }
+  .company-form-title {
+    font-size: var(--font-size-h2-mobile);
+    line-height: var(--line-height-h2-mobile);
+    font-weight: var(--font-weight-h2-mobile);
+    letter-spacing: var(--letter-spacing-h2-mobile);
+    margin: 0;
+    text-align: center;
+  }
 
-.add-company-body {
-  font-size: var(--font-size-h4);
-  line-height: var(--line-height-h4);
-  font-weight: var(--font-weight-h4);
-  letter-spacing: var(--letter-spacing-h4);
-  margin: 0;
-  text-align: center;
-}
-.add-title {
-  font-size: var(--font-size-h4);
-  line-height: var(--line-height-h4);
-  font-weight: var(--font-weight-h4);
-  letter-spacing: var(--letter-spacing-h4);
-  margin: 0;
-}
+  .add-company-body {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h4);
+    font-weight: var(--font-weight-h4);
+    letter-spacing: var(--letter-spacing-h4);
+    margin: 0;
+    text-align: center;
+  }
+  .add-title {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-h4);
+    font-weight: var(--font-weight-h4);
+    letter-spacing: var(--letter-spacing-h4);
+    margin: 0;
+  }
 
-.tablet {
-  display: none
-}
-.new-course-title-d {
-  display: none;
-}
-.new-course-title-m {
-  display: flex;
-}
+  .tablet {
+    display: none;
+  }
+  .new-course-title-d {
+    display: none;
+  }
+  .new-course-title-m {
+    display: flex;
+  }
 
-.hero-banner-container {
-  justify-content: center;
-}
-.hero-text-container {
-  justify-content: flex-start;
-  row-gap: 32px;
-  margin-top: 64px;
-}
+  .hero-banner-container {
+    justify-content: center;
+  }
+  .hero-text-container {
+    justify-content: flex-start;
+    row-gap: 32px;
+    margin-top: 64px;
+  }
 
-.logo-container {
-  width: 116px;
-}
+  .logo-container {
+    width: 116px;
+  }
 
-.desktop-only {
-  display: none;
-}
+  .desktop-only {
+    display: none;
+  }
 
-.mobile-only {
-  display: block;
-}
-.header-left-side {
-  max-width: none;
-}
+  .mobile-only {
+    display: block;
+  }
+  .header-left-side {
+    max-width: none;
+  }
 
-.search-container {
-  display: none; /* Add this line */
-}
+  .search-container {
+    display: none; /* Add this line */
+  }
 
-.logo-container {
-  padding-right: 0; /* Add this line */
-}
+  .logo-container {
+    padding-right: 0; /* Add this line */
+  }
 
-.header-left-side {
-  justify-content: flex-start; /* Add this line */
-}
-
+  .header-left-side {
+    justify-content: flex-start; /* Add this line */
+  }
 }
 
 /* Mobile styles */
@@ -221,7 +217,6 @@ footer {
     line-height: var(--line-height-p-sb);
     font-weight: var(--font-weight-p-sb);
     letter-spacing: var(--letter-spacing-p-sb);
-
   }
 
   .footer-company-social {
@@ -241,11 +236,16 @@ footer {
   .top-companies-items-container,
   .top-course-items-container,
   .new-course-items-container {
-       max-width: 100%;
-       width: 100%;
-
+    max-width: 100%;
+    width: 100%;
   }
-  
+
+  .new-course-name {
+    font-size: var(--font-size-large-sb);
+    line-height: var(--line-height-large-sb);
+    font-weight: var(--font-weight-large-sb);
+    letter-spacing: var(--letter-spacing-large-sb);
+  }
 
   /* .search-section-container{
     display: flex;
@@ -332,7 +332,6 @@ footer {
     font-weight: var(--font-weight-p-sb);
     letter-spacing: var(--letter-spacing-p-sb);
   }
-
 
   h1.hero-text {
     font-size: var(--font-size-h1-tab-mobile);
