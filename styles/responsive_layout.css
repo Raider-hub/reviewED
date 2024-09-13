@@ -239,11 +239,13 @@ footer {
   }
 
   .top-companies-items-container,
+  .top-course-items-container,
   .new-course-items-container {
        max-width: 100%;
        width: 100%;
 
   }
+  
 
   /* .search-section-container{
     display: flex;
