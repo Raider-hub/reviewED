@@ -14,4 +14,5 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);
+module.exports = app;
