@@ -13,7 +13,7 @@ async function route(event) {
 
 async function loadContent() {
     showLoading();
-    let path = window.location.pathname.replace(/\/$/, "");
+    let path = window.location.hash.replace('#', '') || '/';
         // Always default to home if path is not in routes
         if (!routes[path]) {
             path = '/';
@@ -38,13 +38,18 @@ async function loadContent() {
     }
 }
 
+
+
 function navigateTo(path) {
     window.history.pushState({}, "", path);
     loadContent();
 }
+window.addEventListener('hashchange', loadContent);
+window.addEventListener('load', loadContent);
 
 window.onpopstate = loadContent;
 window.route = route;
 window.navigateTo = navigateTo;
+
 
 loadContent();
