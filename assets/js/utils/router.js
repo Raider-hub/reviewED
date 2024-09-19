@@ -13,7 +13,7 @@ async function route(event) {
 
 async function loadContent() {
     showLoading();
-    const path = window.location.pathname;
+    let path = window.location.pathname.replace(/\/$/, "");
         // Always default to home if path is not in routes
         if (!routes[path]) {
             path = '/';
@@ -24,8 +24,9 @@ async function loadContent() {
     
     try {
         const content = await fetch(route.path).then((data) => data.text());
-        document.getElementById("main-app").innerHTML = content;
-        document.title = `${route.title} - SPA Router Example`;
+       const hey = document.getElementById("main-app").innerHTML = content;
+        document.title = `${route.title} - ReviewED`;
+        console.log('Whats wrong:', route.path, route);
         
         // Apply dynamic styling
         // document.body.className = path.substr(1) || 'home';
