@@ -34,7 +34,7 @@ footer {
 
 /* Tablet styles */
 @media (max-width: 1024px) {
-  .homepage-container {
+  .body-container {
     padding: 18px 48px 0px 48px;
   }
   .footer-container {
@@ -188,7 +188,7 @@ footer {
 
 /* Mobile styles */
 @media (max-width: 767px) {
-  .homepage-container {
+  .body-container {
     padding: 36px 20px 0px 20px;
   }
   .footer-container {
