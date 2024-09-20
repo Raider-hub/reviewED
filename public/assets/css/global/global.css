@@ -23,13 +23,14 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
  padding: 18px 94px 0px 94px;
- min-height: 100vh;
+ 
  
 }
 
 .main-contents-container {
   position: relative;
   width: 100%;
+  min-height: 100vh;
 
   justify-content: center; /* Aligns items vertically (up/down) */
 
