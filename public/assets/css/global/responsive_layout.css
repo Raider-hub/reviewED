@@ -45,6 +45,7 @@ footer {
     align-items: center;
     gap: 24px;
   }
+  
 
   .v-search-section-container {
     display: block;
@@ -193,6 +194,10 @@ footer {
   }
   .footer-container {
     padding: 40px 20px 8px 20px;
+  }
+  #breadcrumbs {
+    padding-top: 24px;
+    
   }
 
   .desktop-only {

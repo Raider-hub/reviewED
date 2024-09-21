@@ -64,3 +64,30 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 24px;
 }
 
+
+#history-container {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+#history-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#history-container li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#history-container a {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+
+#history-container a:hover {
+  text-decoration: underline;
+}

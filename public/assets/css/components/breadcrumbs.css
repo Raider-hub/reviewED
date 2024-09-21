@@ -1,0 +1,28 @@
+/* Breadcrumb container */
+#breadcrumbs {padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Breadcrumb links */
+#breadcrumbs a {
+  text-decoration: none;
+  color: var(--color-zinc-400);
+}
+
+#breadcrumbs a:hover {
+  cursor: pointer;
+}
+
+/* Breadcrumb separator */
+/* .breadcrumb-separator  {
+
+
+} */
+
+/* Active breadcrumb (current page) */
+.breadcrumb-active {
+  color: var(--color-zinc-900);
+}
