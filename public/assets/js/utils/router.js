@@ -32,16 +32,30 @@ function loadPageStyles(cssFiles) {
   });
   currentPageStyles = [];
 
-  cssFiles.forEach((href) => {
-    if (href) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = href;
-      document.head.appendChild(link);
-      currentPageStyles.push(link);
-    }
-  });
+  // Return a promise that resolves when all stylesheets are fully loaded
+  return Promise.all(
+    cssFiles.map((href) => {
+      return new Promise((resolve, reject) => {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = href;
+
+        // Resolve when the stylesheet is loaded
+        link.onload = () => resolve();
+
+        // Reject in case of an error loading the stylesheet
+        link.onerror = () => reject(new Error(`Failed to load CSS file: ${href}`));
+
+        // Append the link element to the head
+        document.head.appendChild(link);
+
+        // Keep track of the loaded styles for removal later
+        currentPageStyles.push(link);
+      });
+    })
+  );
 }
+
 
 async function route(event) {
   event = event || window.event;
@@ -104,14 +118,19 @@ async function loadContent() {
     path: "pages/404.html", // 404 page
     title: "Page Not Found",
   };
+  
 
   try {
     const content = await fetch(routeToLoad.path).then((data) => data.text());
+
+   // Load the CSS files and wait for them to be fully loaded
+    await loadPageStyles(route.css || []);
+    
     document.getElementById("main-app").innerHTML = content;
     document.title = `${routeToLoad.title} - ReviewED`; // Fixed template literal
     window.scrollTo(0, 0); // Scroll to top after loading content
 
-    loadPageStyles(routeToLoad.css || []); // Only load CSS if route exists
+    
 
     updateBreadcrumbs(); // Update breadcrumbs dynamically after loading the page
   } catch (error) {
