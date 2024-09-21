@@ -16,9 +16,8 @@ const routes = {
     path: "pages/clp/course_list_page.html",
     title: "Course List page",
     css: ["/assets/css/layouts/clp.css"],
-       breadCrumbsTitle: 'Courses'
+    breadCrumbsTitle: 'Courses'
   },
-
   // Add more routes here
 };
 
@@ -56,7 +55,6 @@ function loadPageStyles(cssFiles) {
   );
 }
 
-
 async function route(event) {
   event = event || window.event;
   event.preventDefault();
@@ -67,6 +65,7 @@ async function route(event) {
     await loadContent();
   }
 }
+
 function updateBreadcrumbs() {
   const breadcrumbsContainer = document.getElementById("breadcrumbs");
 
@@ -112,34 +111,38 @@ async function loadContent() {
     path = "/";
   }
 
+  // Hide the content container to prevent FOUC
+  const mainApp = document.getElementById("main-app");
+  mainApp.style.visibility = "hidden";
+
   // Check if the route exists, otherwise load the 404 page
   const route = routes[path];
   const routeToLoad = route || {
     path: "pages/404.html", // 404 page
     title: "Page Not Found",
   };
-  
 
   try {
+    // Load the CSS files and wait for them to be fully loaded
+    await loadPageStyles(route.css || []);
+
+    // Once styles are loaded, set content and make it visible
     const content = await fetch(routeToLoad.path).then((data) => data.text());
 
-   // Load the CSS files and wait for them to be fully loaded
-    await loadPageStyles(route.css || []);
-    
-    document.getElementById("main-app").innerHTML = content;
+    mainApp.innerHTML = content;
+    mainApp.style.visibility = "visible";
+
     document.title = `${routeToLoad.title} - ReviewED`; // Fixed template literal
     window.scrollTo(0, 0); // Scroll to top after loading content
-
-    
 
     updateBreadcrumbs(); // Update breadcrumbs dynamically after loading the page
   } catch (error) {
     console.error("Error loading page:", error);
 
     // Display detailed error message on screen
-    document.getElementById("main-app").innerHTML = `<h1>Error loading page</h1>
-        <p>${error.message}</p>
-        <pre>${error.stack}</pre>`; // Fixed template literal
+    mainApp.innerHTML = `<h1>Error loading page</h1>
+      <p>${error.message}</p>
+      <pre>${error.stack}</pre>`; // Fixed template literal
   } finally {
     hideLoading();
   }
@@ -153,7 +156,7 @@ function navigateTo(path) {
 // Handle browser back/forward navigation
 window.onpopstate = loadContent;
 
-window.route = route; // Fixed typo
+window.route = route;
 window.navigateTo = navigateTo;
 
 // Initial page load (first load)

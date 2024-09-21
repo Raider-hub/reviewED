@@ -39,6 +39,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  visibility: none;
 }
 
 /* Hide the clear (X) button in Chrome, Safari, and Edge */
